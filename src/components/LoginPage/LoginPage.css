@@ -1,0 +1,78 @@
+.sign__form-box,
+.btns__wrap,
+.reg__form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign__form-box,
+.reg__form-wrapper {
+  flex-direction: column;
+}
+
+.sign__form-wrapper {
+  margin: 200px auto;
+  padding-bottom: 50px;
+}
+
+.sign__form-box > :nth-child(n + 2),
+.reg__form-wrapper > :nth-child(n + 1) {
+  margin-top: 15px;
+}
+
+.btns__wrap {
+  margin-top: 20px;
+}
+
+.btns__wrap > :nth-child(n + 2) {
+  margin-left: 12px;
+}
+
+.ant-tag {
+  background-color: #e6f7ff;
+  padding: 3px 10px;
+}
+
+.ant-tag-has-color {
+  color: #333;
+}
+
+.ant-tag-close-icon {
+  color: #1890ff;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 8px 30px;
+  border-radius: 999px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: 0.25s;
+}
+
+.btn.next-btn {
+  background-color: #1890ff;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn.next-btn:hover {
+  background-color: transparent;
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+.btn.btn__reg-sign:hover {
+  background-color: transparent;
+  color: #666;
+  border-color: #ccc;
+}
+
+.example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+}

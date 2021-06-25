@@ -1,16 +1,21 @@
-import { PageHeader, Button } from 'antd';
-import './Header.css';
+import { PageHeader, Button } from "antd";
+import "./Header.css";
+
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <>
       <PageHeader
         ghost={false}
-        title="Tinder Web App"
+        title={[
+          <Link to="/">Web Tinder</Link>
+        ]}
         className="header"
         extra={[
-          <Button key="1">Login in</Button>,
-          <Button key="2">Regestration</Button>
+          <Button key="1">
+            <Link to="/login">Увійти</Link>
+          </Button>,
         ]}
       ></PageHeader>
     </>
